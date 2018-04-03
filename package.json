@@ -2,7 +2,7 @@
   "name": "unininja-website",
   "description": "The UniNinja website.",
   "version": "0.0.1",
-  "author": "UniNInja",
+  "author": "UniNinja",
   "dependencies": {
     "babel-plugin-lodash": "^3.2.11",
     "gatsby": "^1.8.11",
@@ -47,14 +47,15 @@
     "write-good": "^0.11.3"
   },
   "keywords": [
-    "unininja"
+    "unininja", "universities", "higher education", "education"
   ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
     "serve": "gatsby serve",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "test": "echo \"No tests specified yet!\" && exit 0"
   },
   "remarkConfig": {
     "plugins": [
