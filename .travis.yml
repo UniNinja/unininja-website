@@ -2,7 +2,9 @@ language: node_js
 node_js:
   - "node"
 addons:
-  ssh_known_hosts: 77.72.0.122:722
+  ssh_known_hosts:
+    - uni.ninja:722
+    - 77.72.0.122:722
 before_install:
   - cd website
 install: npm install
