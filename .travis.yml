@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "node"
 addons:
-  ssh_known_hosts: uni.ninja:722
+  ssh_known_hosts: 77.72.0.122:722
 before_install:
   - cd website
 install: npm install
@@ -18,4 +18,4 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: scp -r -P 722 $TRAVIS_BUILD_DIR/website/unininja/* unininja@uni.ninja:~/public_html
+  script: scp -r -P 722 $TRAVIS_BUILD_DIR/website/build/unininja/* unininja@uni.ninja:~/public_html
