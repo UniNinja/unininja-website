@@ -10,6 +10,7 @@ script:
   - echo "no tests"
 before_deploy:
   - npm run build
+  - cd ../
   - openssl aes-256-cbc -K $encrypted_43adbc9a54a6_key -iv $encrypted_43adbc9a54a6_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
   - eval "$(ssh-agent -s)"
   - chmod 600 /tmp/deploy_rsa
