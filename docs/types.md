@@ -1,0 +1,4 @@
+---
+id: types
+title: Types
+---

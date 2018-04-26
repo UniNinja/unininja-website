@@ -3,7 +3,11 @@ node_js:
   - "node"
 addons:
   ssh_known_hosts: uni.ninja:722
+before_install:
+  - cd website
 install: npm install
+script:
+  - echo "no tests"
 before_deploy:
   - npm run build
   - openssl aes-256-cbc -K $encrypted_43adbc9a54a6_key -iv $encrypted_43adbc9a54a6_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
@@ -13,4 +17,4 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: scp -r -P 722 $TRAVIS_BUILD_DIR/public/* unininja@uni.ninja:~/public_html
+  script: scp -r -P 722 $TRAVIS_BUILD_DIR/website/unininja/* unininja@uni.ninja:~/public_html
