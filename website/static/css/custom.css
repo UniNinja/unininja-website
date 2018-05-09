@@ -7,6 +7,14 @@
     align-items: center;
   }
 
+  table tr th code, table tr td code, code {
+    color: #333;
+  }
+
+  table tr th a > code, table tr td a > code, code {
+    color: #1a64db;
+  }
+
   .unininja-logo {
     width: 100%;
     max-width: 600px;
