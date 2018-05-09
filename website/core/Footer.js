@@ -23,6 +23,10 @@ class Footer extends React.Component {
       <footer className='nav-footer' id='footer'>
         <section className='sitemap'>
           <div>
+            <h5>Keep in touch</h5>
+            <a href='https://twitter.com/unininjaapp'>Twitter</a>
+          </div>
+          <div>
             <h5>Developers</h5>
             <a href={this.docUrl('introduction.html')}>
               Getting Started
