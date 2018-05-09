@@ -51,4 +51,4 @@ And so on! If you have never used GraphQL before, we recommend you [check out so
 
 ## API Endpoint
 
-The API is hosted at `https://api.uni.ninja/v0`
+The API is hosted at `https://api.uni.ninja/v1`
