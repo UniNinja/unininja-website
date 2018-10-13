@@ -1,17 +1,29 @@
 {
-  "scripts": {
-    "examples": "docusaurus-examples",
-    "start": "docusaurus-start",
-    "build": "docusaurus-build",
-    "publish-gh-pages": "docusaurus-publish",
-    "write-translations": "docusaurus-write-translations",
-    "version": "docusaurus-version",
-    "rename-version": "docusaurus-rename-version"
-  },
-  "devDependencies": {
-    "docusaurus": "^1.0.14"
-  },
+  "name": "website",
+  "version": "0.1.0",
+  "description": "The official UniNinja website.",
+  "main": "siteConfig.js",
   "dependencies": {
-    "@fortawesome/react-fontawesome": "0.0.18"
-  }
+    "docusaurus": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UniNinja/website.git"
+  },
+  "keywords": [
+    "website",
+    "documentation",
+    "unininja",
+    "uni"
+  ],
+  "author": "UniNinja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UniNinja/website/issues"
+  },
+  "homepage": "https://github.com/UniNinja/website#readme"
 }
